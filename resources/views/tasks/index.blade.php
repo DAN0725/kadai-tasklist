@@ -10,7 +10,8 @@
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>メッセージ</th>
+                    <th>ステータス</th>
+                    <th>タスク管理</th>
                 </tr>
             </thead>
             <tbody>
