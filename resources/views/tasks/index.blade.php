@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    {{-- ユーザ一覧 --}}
+    @include('users.users')
+@endsection
 
 <!-- ここにページ毎のコンテンツを書く -->
 <h1>メッセージ一覧</h1>
@@ -18,7 +21,7 @@
                 @foreach ($tasks as $task)
                 <tr>
                     <td>{!!link_to_route('tasks.show', $task->id,['task' => $task->id]) !!}</td>
-                    <td>{{ $task->title }}</td>
+                    <td>{{ $task->status }}</td>
                     <td>{{ $task->content }}</td>
                 </tr>
                 @endforeach
